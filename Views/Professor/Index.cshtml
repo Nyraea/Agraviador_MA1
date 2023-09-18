@@ -42,7 +42,6 @@
             <td>@SalaryPerMonth</td>
             <td><a asp-action="ShowDetail" asp-route-id="@professor.Id">Show Details</a></td>
 
-
         </tr>
 
     }
@@ -56,4 +55,5 @@
     <h5>
         I'm @professor.FirstName @professor.LastName and I'm @age years old.
     </h5>
+    <button><a asp-action="AddProfessor" asp-controller="Professor">Add Professor</a></button>
 }

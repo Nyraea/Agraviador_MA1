@@ -36,6 +36,19 @@ namespace Agraviador_ITELEC1C.Controllers
 
             return NotFound();
         }
-       
+        [HttpGet]
+        
+        public IActionResult AddProfessor()
+        {
+            return View();
+        }
+
+        [HttpPost]
+
+        public IActionResult AddProfessor(Professor newProfessor)
+        {
+            ProfessorList.Add(newProfessor);
+            return View("Index", ProfessorList);
+        }
     }
 }
